@@ -14,9 +14,9 @@ describe('String#title_case') do
   it("capitalizes designated words if they are the first word") do
     expect(("the illiad").title_case()).to(eq("The Illiad"))
   end
-  # it("handles non-letter characters") do
-  #   expect(("20,000 leagues under the sea").title_case())to(eq("20,000 Leagues under the Sea"))
-  # end
+  it("handles non-letter characters") do
+    expect(("20,000 leagues under the sea").title_case()).to(eq("20,000 Leagues under the Sea"))
+  end
   # it("manages all uppercase entries") do
   #   expect(("BATMAN").title_case()).to(eq("Batman"))
   # end
