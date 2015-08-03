@@ -5,9 +5,9 @@ describe('String#title_case') do
   it("capitalizes the first letter of a word") do
     expect(("batman").title_case()).to(eq("Batman"))
   end
-  # it("capitalizes the first letter of a multiple word string") do
-  #   expect(("harry potter").title_case()).to(eq("Harry Potter"))
-  # end
+  it("capitalizes the first letter of a multiple word string") do
+    expect(("harry potter").title_case()).to(eq("Harry Potter"))
+  end
   # it("does not capitalize designated words (like prepositions, conjunctions, etc)") do
   #   expect(("harry potter and the prisoner of azkaban").title_case()).to(eq("Harry Potter and the Prisoner of Azkaban"))
   # end
