@@ -17,12 +17,12 @@ describe('String#title_case') do
   it("handles non-letter characters") do
     expect(("20,000 leagues under the sea").title_case()).to(eq("20,000 Leagues under the Sea"))
   end
-  # it("manages all uppercase entries") do
-  #   expect(("BATMAN").title_case()).to(eq("Batman"))
-  # end
-  # it("manages mixed case entries") do
-  #   expect(("HarRRy PoTTer").title_case()).to(eq("Harry Potter"))
-  # end
+  it("manages all uppercase entries") do
+    expect(("BATMAN").title_case()).to(eq("Batman"))
+  end
+  it("manages mixed case entries") do
+    expect(("HarRy PoTTer").title_case()).to(eq("Harry Potter"))
+  end
   # it("manages unique case entries") do
   #   expect(("old McDonald").title_case()).to(eq("Old McDonald"))
   # end
