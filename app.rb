@@ -8,6 +8,6 @@ get('/') do
 end
 
 get('/title') do
-  @title = params.fetch('title').title_case_again()
+  @title = params.fetch('title').title_case()
   erb(:title)
 end
