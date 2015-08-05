@@ -1,7 +1,7 @@
 class String
 
   define_method(:title_case) do
-    designated_words = ["a", "an", "the", "for", "and", "nor", "but", "or", "so", "at", "around", "by", "after", "along", "from", "of", "on", "to", "under"]
+    designated_words = ["a", "an", "the", "for", "and", "nor", "but", "or", "so", "at", "around", "by", "after", "along", "from", "of", "in", "on", "to", "under"]
 
     self.downcase()
     split_sentence = self.split
